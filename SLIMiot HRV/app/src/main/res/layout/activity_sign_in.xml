@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SignInActivity">
+
+
+    <ScrollView
+        android:id="@+id/awakeScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="@font/textfont"
+                android:gravity="center"
+                android:text="Sign in to your Dozemate Account"
+                android:textColor="#2196F3"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:shadowColor="#000000"
+                android:textColor="@color/textColor"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#7C7A7A"
+                android:textColorLink="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/passwordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#7C7A7A"
+                android:textColorLink="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
+
+            <RadioButton
+                android:id="@+id/rememberMeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/textfont"
+                android:text="Remember my ID"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifyEmail" />
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="70dp"
+                android:fontFamily="@font/textfont"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size"
+                app:cornerRadius="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rememberMeRadio" />
+
+            <TextView
+                android:id="@+id/resetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/textfont"
+                android:text="Find ID or Reset password"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/textfont"
+                android:text="Create Account"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resetPassword" />
+
+            <TextView
+                android:id="@+id/verifyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/textfont"
+                android:text="Verify Email"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

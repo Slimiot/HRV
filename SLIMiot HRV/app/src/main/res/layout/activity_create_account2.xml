@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.CreateAccount2">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:text="Create your Dozemate Account"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/passwordCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                 />
+
+            <EditText
+                android:id="@+id/confirmCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+
+               />
+
+            <EditText
+                android:id="@+id/firstNameCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+
+               />
+
+            <EditText
+                android:id="@+id/lastNameCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextMyPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Contact Number"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:text="Date of birth:"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                style="?android:spinnerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="openDatePicker"
+                android:paddingRight="70dp"
+                android:text="JAN 01 2020"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/zipCodeCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/textfont"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:hint="Zip Code"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:text="Check out the following options:"
+                android:textStyle="bold"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/gotNewsRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/textfont"
+                android:text="Get news and special offers (optional)"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/textfont"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Details"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/textfont"
+                    android:textSize="@dimen/text_size"
+                    android:text="Back"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:cornerRadius="30sp" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/textfont"
+                    android:textSize="@dimen/text_size"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    app:cornerRadius="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

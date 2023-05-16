@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Font Sizes-->
+    <dimen name="text_input">14sp</dimen>
+    <dimen name="p">12sp</dimen>
+    <dimen name="h1">40sp</dimen>
+    <dimen name="h2">32sp</dimen>
+    <dimen name="h3">24sp</dimen>
+    <dimen name="h4">20sp</dimen>
+    <dimen name="h5">16sp</dimen>
+    <dimen name="h6">14sp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_48">48dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+
+    <!-- Default screen margin and padding, as per the Android Design guidelines. -->
+    <dimen name="container_margin">16dp</dimen>
+    <dimen name="container_padding">16dp</dimen>
+
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+</resources>

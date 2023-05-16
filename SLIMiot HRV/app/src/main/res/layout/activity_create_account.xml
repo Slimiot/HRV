@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.CreateAccount">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="257dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/textfont"
+        android:gravity="center"
+        android:text="Create your Dozemate Account"
+        android:textColor="#2196F3"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/okHeightDialog"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/textColor"
+        android:text="To continue,read and agree to the Terms and Conditions, Terms of Service, and Dozemate Account Privacy Notice."
+        android:fontFamily="@font/textfont"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/textfont"
+        android:textSize="@dimen/text_size"
+        android:text="Agree"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okHeightDialog" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="10dp"
+        android:text="Dozemate Account"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/textfont"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Copyright @ 2021"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/textfont"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

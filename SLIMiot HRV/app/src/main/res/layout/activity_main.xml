@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/textfont"
+            android:text="HRV Monitor"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/connectBleStateHRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:fontFamily="@font/textfont"
+            android:gravity="right"
+            android:text="Not Connected"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/textfont"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heart Rate"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <ImageView
+                        android:id="@+id/heartRateHint"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="right"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/question_profile_big" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtDisplayHR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="0"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txtDisplayHRAvg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min "
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <TextView
+                        android:id="@+id/txtDisplayHRMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max"
+                        android:gravity="right"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/textfont"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HRV Score"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <ImageView
+                        android:id="@+id/hrvScoreHint"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="right"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/question_profile_big" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtDisplayHRVScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:text="SDNN "
+                            android:gravity="left"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                        <TextView
+                            android:id="@+id/txtDisplaySDNN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RMSSD "
+                            android:gravity="right"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                        <TextView
+                            android:id="@+id/txtDisplayRMSSD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:gravity="right"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lf/Hf (%) "
+                            android:gravity="left"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                        <TextView
+                            android:id="@+id/txtDisplayLfByHf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PNN50 "
+                            android:gravity="right"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                        <TextView
+                            android:id="@+id/txtDisplayPNN50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:gravity="right"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/textfont"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/textfont"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stress Index"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <ImageView
+                        android:id="@+id/stressIndexHint"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="right"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/question_profile_big" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtDisplayStressIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+                <TextView
+                    android:id="@+id/txtDisplayAtrialFibrillationChances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/textfont"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txtDisplayRRIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RR Values: 0"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                    <TextView
+                        android:id="@+id/artifactsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artefacts: 0"
+                        android:gravity="right"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/textfont"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/combinedChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingClass" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtDisplayRRMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+                <TextView
+                    android:id="@+id/txtDisplayRRAvg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avg"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+                <TextView
+                    android:id="@+id/txtDisplayRRMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max"
+                    android:gravity="right"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/textfont"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:id="@+id/startHRVButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Start"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/textfont"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/exitHRVButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Exit"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/textfont"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_8"
+    android:orientation="vertical"
+    tools:context=".View.Fragment.NordicScan.NordicScanFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartScan"
+            android:text="Start Scan"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorSecondaryDark"
+            style="@style/FilledButtonDefault"
+            android:theme="@style/Theme.Dozemate"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStopScan"
+            android:text="Stop Scan"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorSecondaryDark"
+            style="@style/FilledButtonDefault"
+            android:theme="@style/Theme.Dozemate"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClear"
+            android:text="Clear"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorDarkGrey"
+            style="@style/FilledButtonDefault"
+            android:theme="@style/Theme.Dozemate"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listDevicesFound"
+        android:divider="@color/colorLightGrey"
+        android:dividerHeight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

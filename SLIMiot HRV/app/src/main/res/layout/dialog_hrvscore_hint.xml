@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="HRV"
+                    android:fontFamily="@font/textfont"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HRV, or heart rate variability, is the variation in time intervals between consecutive heartbeats, which is controlled by the autonomic nervous system.
+\nThe values usually lie between 90-50 from young age to old. Higher value for a specific age shows a good heart and body state."
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="\nThere are several factors that can impact HRV, including:"
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Age: HRV tends to decrease with age, particularly after the age of 40.
+\n2. Exercise: Regular exercise has been shown to increase HRV, while a sedentary lifestyle can lead to a decrease in HRV.
+\n3. Stress: Acute stress can lead to a decrease in HRV, while chronic stress can lead to a more significant reduction in HRV over time.
+\n4. Sleep: Poor sleep quality or inadequate sleep can decrease HRV.
+\n5. Nutrition: A diet high in processed foods and low in nutrients can negatively impact HRV, while a balanced diet with sufficient nutrients can promote HRV.
+\n6. Illness or disease: Certain medical conditions, such as heart disease, can cause a decrease in HRV.
+\n7. Medications: Some medications, such as beta-blockers, can decrease HRV."
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Overall, HRV can be impacted by a variety of factors, both positive and negative, and maintaining a healthy lifestyle can help promote optimal HRV."
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SDNN"
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SDNN (standard deviation of normal-to-normal RR intervals) is a measure of heart rate variability (HRV) that reflects the standard deviation of the time intervals between normal consecutive heartbeats (RR intervals) that occur during sinus rhythm.
+\n\nSDNN ranges between 90-50 on an average from young to old age. The higher values the better.
+\n\nIn other words, SDNN measures the degree of variability in the intervals between consecutive heartbeats, which is controlled by the autonomic nervous system. A higher SDNN indicates greater variability in heart rate, which is generally considered a sign of healthy autonomic function.
+\n\nSDNN is usually calculated over a period of 24 hours from an electrocardiogram (ECG) recording, and is expressed in milliseconds (ms)."
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RMSSD"
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RMSSD (root mean square of successive differences) is a measure of heart rate variability (HRV) that reflects the square root of the average of the squared differences between adjacent normal-to-normal (NN) intervals. It is a time-domain HRV measure that quantifies the degree of variability in the intervals between consecutive heartbeats that occur during sinus rhythm, and is controlled by the autonomic nervous system."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RMSSD ranges from 70-30 on an average from young to old age. The higher values the better."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lf/Hf (%)"
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Lf/Hf ratio is a measure of heart rate variability (HRV) that is based on the frequency domain analysis of the RR interval series. The Lf/Hf ratio is calculated by dividing the low-frequency (Lf) power of the HRV spectrum by the high-frequency (Hf) power of the HRV spectrum. The Lf/Hf ratio is considered to be an index of the balance between sympathetic and parasympathetic nervous system activity."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="There is some evidence to suggest that the Lf/Hf ratio may be associated with atrial fibrillation (AF), which is a common heart arrhythmia characterized by irregular and often rapid heart rate.\n\nIn our app this value should lie below 100. It can sometimes come between 100-200, but if it goes beyond 200, it is advised to get the heart test done to rule out any health issues."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PNN50%"
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PNN50% is simply the percentage of adjacent NN intervals that differ by more than 50 milliseconds. For example, if there were 100 adjacent NN intervals in a given time recording."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A higher PNN50% value indicates greater HRV and is generally considered to be a sign of healthy autonomic function. It is 8-4 on an average from young to old age. The higher values the better"
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="It should be noted that interpretation of HRV measures, including PNN50%, Lf/Hf (%), RMSSD, SDNN and HRV score can be complex and depend on several factors, such as age, sex, and health status."
+                        android:fontFamily="@font/textfont"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/okHRVScoreHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="Ok"
+                    android:fontFamily="@font/textfont"
+                    android:textStyle="bold"
+                    android:textColor="@color/bottomNavigationColor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

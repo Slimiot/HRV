@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".View.Activity.SplashActivity">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_margin="@dimen/margin_16"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/app_name"
+                android:textSize="@dimen/h1"
+                android:textColor="@color/colorDarkGrey"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_margin="@dimen/margin_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

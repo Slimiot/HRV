@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorBGTransparent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_0"
+        android:padding="@dimen/padding_0"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.androidplot.xy.XYPlot
+                    android:id="@+id/mPlot"
+                    style="@style/FullScreenGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:paddingTop="5dp"
+                    app:paddingBottom="5dp"
+                    app:paddingLeft="5dp"
+                    app:paddingRight="5dp"
+                    app:backgroundColor="#000000"
+
+                    app:gridBackgroundColor="#000000"
+                    app:graphBackgroundColor="#000000"
+                    app:graphMarginTop="20dp"
+                    app:graphMarginBottom="20dp"
+                    app:graphMarginLeft="30dp"
+                    app:graphMarginRight="5dp"
+                    app:gridInsetLeft="25dp"
+                    app:gridInsetBottom="20dp"
+                    app:title="HR and RR vs. Time"
+                    app:titleTextColor="#000000"
+                    app:titleTextSize="15dp"
+                    app:rangeTitle="HR, /sec RR, ms/10"
+                    app:rangeOriginLineColor="#555555"
+                    app:rangeLineColor="#555555"
+                    app:rangeTitleTextColor="#FFFFFF"
+                    app:rangeTitleTextSize="14dp"
+                    app:domainTitle="Time"
+                    app:domainOriginLineColor="#555555"
+                    app:domainLineColor="#555555"
+                    app:domainTitleTextColor="#FFFFFF"
+                    app:domainTitleTextSize="14dp"
+                    app:lineLabels="left|bottom"
+                    app:renderMode="use_background_thread"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtClose"
+                    android:layout_gravity="center"
+                    android:text="Close"
+                    android:textSize="@dimen/h5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSecondaryDark"
+                    android:layout_margin="@dimen/margin_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

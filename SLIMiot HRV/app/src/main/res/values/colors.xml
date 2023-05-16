@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="labelColor">#03D5F0</color>
+    <color name="textColor">#222121</color>
+    <color name="green">#90EE90</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="bottomNavigationColor">#425EF6</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryVariant">#FF3700B3</color>
+
+    <color name="colorSecondary">#FF03DAC5</color>
+    <color name="colorSecondaryDark">#FF018786</color>
+    <color name="colorSecondaryVariant">#FF018786</color>
+    <color name="colorOnSecondary">#FF000000</color>
+
+    <color name="colorAccent">#ED1578</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#333333</color>
+
+    <color name="colorGoogle">#EA4335</color>
+    <color name="colorFacebook">#1877F2</color>
+
+    <color name="colorBGTabActive">@color/colorTransparent</color>
+    <color name="colorBGTabDefault">@color/colorTransparent</color>
+
+    <color name="colorRed">#CC0033</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorGreen">#2B910F</color>
+    <color name="colorBlue">#1A508F</color>
+
+    <color name="colorDanger">#E7BDC1</color>
+    <color name="colorSuccess">#B3DBBD</color>
+    <color name="colorNotification">#00c0ef</color>
+
+    <color name="colorBrown">#660A00</color>
+    <color name="colorLightGrey">#DDDDDD</color>
+    <color name="colorGrey">#CCCCCC</color>
+    <color name="colorDarkGrey">#777777</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBGTransparent">#75000000</color>
+    <color name="colorBGDarkGrey">#90000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#666666</color>
+
+    <color name="video_thumbnail_placeholder_color">#000000</color>
+    <color name="percent_50_black">#80000000</color>
+</resources>

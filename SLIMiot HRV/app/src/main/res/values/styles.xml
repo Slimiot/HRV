@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/p</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_margin">@dimen/margin_0</item>
+        <item name="android:padding">@dimen/padding_0</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FilledButtonDefault" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_8</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+</resources>

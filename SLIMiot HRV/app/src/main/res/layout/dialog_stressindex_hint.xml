@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Stress index"
+                    android:fontFamily="@font/textfont"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stress Index is a heart rate variability (HRV) measure that is used to assess the level of stress in an individual.
+
+\n\nA higher Stress Index indicates a higher level of stress, as it reflects a relative increase in sympathetic nervous system activity or a decrease in parasympathetic nervous system activity. Conversely, a lower Stress Index indicates a lower level of stress, as it reflects a relative increase in parasympathetic nervous system activity or a decrease in sympathetic nervous system activity.
+\n\nStress index ranges between 0-30. The lower values are better.
+\n\nYou can use Breathing exercise given in this app to reduce the Stress as it rises.
+\n\nIt should be noted that interpretation of HRV measures, including the Stress Index, can be complex and depend on several factors, such as age, sex, and health status."
+                        android:fontFamily="@font/textfont"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"/>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/okStressIndexHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="Ok"
+                    android:fontFamily="@font/textfont"
+                    android:textStyle="bold"
+                    android:textColor="@color/bottomNavigationColor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
